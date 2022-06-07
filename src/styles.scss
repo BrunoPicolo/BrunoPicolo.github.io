@@ -3,6 +3,11 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+/* Avoids footer overlapping the main content */
+body {
+  padding-bottom: 70px;
+}
+
 /* Set default width to bootstrap icons */
 bi {
   width: 25px;
