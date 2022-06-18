@@ -8,6 +8,12 @@ body {
   padding-bottom: 70px;
 }
 
+@media only screen and (max-width: 735px) {
+  body {
+    padding-bottom: 120px;
+  }
+}
+
 /* Set default width to bootstrap icons */
 bi {
   width: 25px;

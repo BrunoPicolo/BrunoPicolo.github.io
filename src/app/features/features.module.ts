@@ -9,7 +9,9 @@ import { AppRoutingModule } from '../app-routing.module'
 import { ProjectsPageComponent } from './projects-page/projects-page.component'
 import { ProjectsListComponent } from './projects-page/projects-list/projects-list.component'
 import { ProjectCardComponent } from './projects-page/project-card/project-card.component'
-import { ProjectDetailComponent } from './projects-page/project-detail/project-detail.component'
+import { ProjectDetailComponent } from './projects-page/project-detail/project-detail.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { FormComponent } from './contact-page/form/form.component'
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ProjectDetailComponent } from './projects-page/project-detail/project-d
     ProjectsPageComponent,
     ProjectsListComponent,
     ProjectCardComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ContactPageComponent,
+    FormComponent
   ],
     imports: [
         CommonModule,
