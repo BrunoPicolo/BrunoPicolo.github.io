@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbModule, NgbProgressbar } from "@ng-bootstrap/ng-bootstrap";
+import { NgbCarousel, NgbModule, NgbProgressbar } from "@ng-bootstrap/ng-bootstrap";
 import { BootstrapIconsModule } from "ng-bootstrap-icons";
 import { Facebook, Github, Linkedin } from "ng-bootstrap-icons/icons";
 import {
@@ -16,7 +16,8 @@ import {
   Docker,
   Openshift,
   Jenkins
-} from './icons'
+} from './icons';
+import { TruncatePipe } from './pipes/truncate.pipe'
 
 const icons = {
   Linkedin,
@@ -37,7 +38,9 @@ const icons = {
 }
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    TruncatePipe
+  ],
   imports: [
     CommonModule,
     NgbModule,
@@ -45,7 +48,10 @@ const icons = {
   ],
   exports: [
     NgbProgressbar,
-    BootstrapIconsModule
+    BootstrapIconsModule,
+    TruncatePipe
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+  /* Responsibility: Contains the declarations/imports/export of cross-module objects */
+}
