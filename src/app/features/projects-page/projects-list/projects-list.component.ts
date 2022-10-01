@@ -4,13 +4,21 @@ import { ProjectService } from '../services/project.service'
 
 @Component({
   selector: 'app-projects-list',
-  templateUrl: './projects-list.component.html'
+  template:
+  `
+    <div class="row gy-4 mt-4">
+      <div
+        *ngFor="let project of projects"
+        class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+    </div>
+  `
 })
 export class ProjectsListComponent {
-  /* Responsibility: Manages a project list */
+// SRP: Renders a project cards
 
   projects: Project[] = this.projectService.getAll()
 
   constructor(private projectService: ProjectService) { }
-
 }

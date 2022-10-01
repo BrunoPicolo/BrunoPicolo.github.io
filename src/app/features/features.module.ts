@@ -34,5 +34,5 @@ import { FormComponent } from './contact-page/form/form.component'
     ]
 })
 export class FeaturesModule {
-  /* Responsibility: Contains features declarations/imports/exports */
+// SRP: Loads feature's dependencies an declare theirs components
 }

@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core'
   name: 'Truncate'
 })
 export class TruncatePipe implements PipeTransform {
-  /* Responsibility: truncate text */
+// SRP: truncate text
 
   transform(
     value: string | undefined,
@@ -13,7 +13,7 @@ export class TruncatePipe implements PipeTransform {
     ellipsis: string = '...'
   ): string {
     value = value ? value : ''
-    return value.length > limit ? value.substr(0, limit) + ellipsis : value
+    return value.length > limit ? value.substring(0, limit) + ellipsis : value
   }
 
 }

@@ -53,5 +53,5 @@ const icons = {
   ]
 })
 export class SharedModule {
-  /* Responsibility: Contains the declarations/imports/export of cross-module objects */
+// SRP: Contains the declarations/imports/export of cross-module objects
 }

@@ -5,9 +5,9 @@ import { Project } from '../models/Project'
   providedIn: 'root'
 })
 export class ProjectService {
-  /* Responsibility: manages project data */
+// SRP: manages project data
 
-  projects: Project[] = [
+  private projects: Project[] = [
     {
       name: 'This website :)',
       company: 'Personal Project',
@@ -119,8 +119,6 @@ export class ProjectService {
       ]
     }
   ]
-
-  constructor() { }
 
   getAll = (): Project[] => this.projects
 }

@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-skills-page',
-  templateUrl: './skills-page.component.html',
-  styleUrls: ['./skills-page.component.scss']
+  templateUrl: './skills-page.component.html'
 })
-export class SkillsPageComponent implements OnInit {
+export class SkillsPageComponent {
+// SRP: Shows the author skills
 
   frontendSkills = [
     { name: 'HTML', experience: 90, icon: 'html' },
@@ -28,10 +28,4 @@ export class SkillsPageComponent implements OnInit {
     { name: 'Jenkins', experience: 80, icon: 'jenkins' },
     { name: 'Openshift', experience: 80, icon: 'openshift' }
   ]
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

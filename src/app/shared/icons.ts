@@ -1,4 +1,4 @@
-/* Responsibility: Defines icon objects using svg tags from https://worldvectorlogo.com */
+// SRP: contains svg definitions from https://worldvectorlogo.com
 
 export const Java = `
     <svg class="bi" width="100%" height="100%" viewBox="0 0 256 346" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">

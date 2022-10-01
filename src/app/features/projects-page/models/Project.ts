@@ -1,5 +1,5 @@
 export interface Project {
-  /* Responsibility: Defines project properties */
+// SRP: Defines project properties
   name: string,
   company: string,
   image: string,
